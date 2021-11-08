@@ -73,9 +73,9 @@
         <script>
             function remoteFunction(code) {
                 // let text;
-                // if(code == "plus" && Number(nilaiSuhu) < 35){
+                // if(code == "plus" && Number(nilaiSuhu) < 30){
                 //     nilaiSuhu = Number(nilaiSuhu) + 1;
-                // }else if (code == "min" && Number(nilaiSuhu) > 15){
+                // }else if (code == "min" && Number(nilaiSuhu) > 16){
                 //     nilaiSuhu = Number(nilaiSuhu) - 1;
                 // }
                 // $.ajax({    
@@ -112,7 +112,7 @@
                     document.getElementById("button_min").disabled = true;
                     document.getElementById("button_plus").disabled = true;
                     disableButton = false;
-                    document.getElementById("suhu").innerHTML = "---";
+                    document.getElementById("suhu").innerHTML = "OFF";
                     var updatePower = firebase.database().ref().child('Power');
                     updatePower.set(0);
                 }else{
