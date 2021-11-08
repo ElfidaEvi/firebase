@@ -94,11 +94,11 @@
                 // // console.log(nilaiSuhu)
                 // document.getElementById("suhu").innerHTML = text;
                 // const newPostKey = push(child(ref(db), 'posts')).key;
-                if(code == "plus"  && Number(nilaiSuhu) < 35){
+                if(code == "plus"  && Number(nilaiSuhu) < 30){
                     var updateSuhu = firebase.database().ref().child('Temperature');
                     nilaiSuhu = Number(nilaiSuhu) + 1;
                     updateSuhu.set(nilaiSuhu);
-                }else if (code == "min" && Number(nilaiSuhu) > 15){
+                }else if (code == "min" && Number(nilaiSuhu) > 16){
                     var updateSuhu = firebase.database().ref().child('Temperature');
                     nilaiSuhu = Number(nilaiSuhu) - 1;
                     updateSuhu.set(nilaiSuhu);
