@@ -112,7 +112,7 @@
                     document.getElementById("button_min").disabled = true;
                     document.getElementById("button_plus").disabled = true;
                     disableButton = false;
-                    document.getElementById("suhu").innerHTML = "-----";
+                    document.getElementById("suhu").innerHTML = "OFF";
                     var updatePower = firebase.database().ref().child('Power');
                     updatePower.set(0);
                 }else{
